@@ -16,6 +16,4 @@ app.use(function(req, res, next) {
 
 app.use("/api", require("./api"))
 
-app.listen(PORT, function () {
-    console.log(`🚀 Server is listening on http://localhost:${PORT}...`)
-})
+module.exports = app;
