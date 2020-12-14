@@ -12,7 +12,7 @@ module.exports.get = function (req, res) {
     }
 }
 
-module.exports.post = function t(req, res) {
+module.exports.post = function (req, res) {
     const { title, description } = req.body;
     const todo = todo.addTodo(title, description);
     res.json(todo)

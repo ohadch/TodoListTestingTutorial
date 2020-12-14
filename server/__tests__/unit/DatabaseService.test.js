@@ -1,5 +1,4 @@
 const sinon = require("sinon")
-const fs = require("fs");
 const db = require("../../services/database");
 const chai = require("chai");
 
