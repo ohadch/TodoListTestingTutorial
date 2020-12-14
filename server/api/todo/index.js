@@ -3,9 +3,12 @@ const Controller = require("./controller");
 
 const router = Router();
 
-router.route("/:id?")
-    .get(Controller.get)
+router.route("/")
+    .get(Controller.getAll)
     .post(Controller.post)
+
+router.route("/:id")
+    .get(Controller.getOne)
     .put(Controller.put)
     .delete(Controller.delete_)
 

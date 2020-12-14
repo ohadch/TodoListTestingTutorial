@@ -1,15 +1,14 @@
 const TodoService = require("../../services/todo");
 
-module.exports.get = function (req, res) {
-    const { id } = req.params;
+module.exports.getAll = function (req, res) {
+    const todos = TodoService.getTodos();
+    res.json({todos})
+}
 
-    if (id) {
-        const todo = TodoService.getTodo(id)
-        res.json(todo)
-    } else {
-        const todos = TodoService.getTodos();
-        res.json({todos})
-    }
+module.exports.getOne = function (req, res) {
+    const { id } = req.params;
+    const todo = TodoService.getTodo(id)
+    res.json(todo)
 }
 
 module.exports.post = function (req, res) {
