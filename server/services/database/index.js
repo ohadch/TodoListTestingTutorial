@@ -33,8 +33,8 @@ module.exports = class DatabaseService {
     static getFreeId(collectionName) {
         const documents = DatabaseService.getCollection(collectionName);
         return documents.length > 0
-            ? Math.max(...documents) + 1
-            : 0
+            ? Math.max(...documents.map(document => document.id)) + 1
+            : 1
     }
 
 }
