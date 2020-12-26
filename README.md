@@ -10,4 +10,4 @@ I wanted to keep it as simple as possible, so in order to prevent usage of exter
 - **Client**: react
 - **DB**: In house JSON database
 - **Unit/integration tests**: mocha + chai + sinon + supertest
-- **E2E tests*: cypress
+- **E2E tests**: cypress
