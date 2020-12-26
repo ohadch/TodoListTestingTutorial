@@ -1,4 +1,4 @@
-# TodoList
+# TodoList Testing Tutorial
 
 This is a simple project that is intended to be a platform that helps me teach how to properly test your code.
 
